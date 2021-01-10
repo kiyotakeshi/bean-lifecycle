@@ -51,7 +51,7 @@ public class CustomBeanFactoryPostProcessor implements BeanFactoryPostProcessor 
         System.out.println("\n" +getClass().getSimpleName() + "::postProcessBeanFactory Listing Beans End\n");
     }
 
-    private boolean beanClassNameContains(BeanDefinition beanClassName, String regex) {
-        return beanClassName != null && beanClassName.getBeanClassName().contains(regex);
+    private boolean beanClassNameContains(BeanDefinition beanDefinition, String regex) {
+        return beanDefinition != null && beanDefinition.getBeanClassName().contains(regex);
     }
 }

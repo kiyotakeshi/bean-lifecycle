@@ -3,11 +3,9 @@ package com.kiyotakeshi.beanLifecycle;
 import com.kiyotakeshi.beanLifecycle.beans.Bean1;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.stream.IntStream;
-
 public class Runner {
     public static void main(String[] args) {
-        try (var context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class)) {
+        try (var context = new AnnotationConfigApplicationContext(AppConfig.class)) {
              var bean1 = context.getBean(Bean1.class);
         }
 

@@ -2,9 +2,11 @@ package com.kiyotakeshi.beanLifecycle;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 @ComponentScan
-public class ApplicationConfiguration {
+@Configuration
+public class AppConfig {
 
     @Bean
     public static CustomBeanFactoryPostProcessor getCustomBeanFactoryPostProcessor(){
