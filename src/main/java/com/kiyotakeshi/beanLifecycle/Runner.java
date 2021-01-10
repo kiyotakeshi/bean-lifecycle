@@ -11,8 +11,9 @@ public class Runner {
              var bean1 = context.getBean(Bean1.class);
         }
 
-        IntStream.range(0, 3).mapToObj(i -> "").forEach(System.out::println);
-        var context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
-        var bean1 = context.getBean(Bean1.class);
+        // not called PreDestroy
+//        IntStream.range(0, 3).mapToObj(i -> "").forEach(System.out::println); // three lines
+//        var context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
+//        var bean1 = context.getBean(Bean1.class);
     }
 }
