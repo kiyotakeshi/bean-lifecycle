@@ -16,13 +16,13 @@ public class Bean1 {
         System.out.println(getClass().getSimpleName() + "::constructor");
     }
 
-//    @Autowired
+    @Autowired
     public void setBean2(Bean2 bean2) {
         System.out.println(getClass().getSimpleName() + "::setSpringBean2");
         this.bean2 = bean2;
     }
 
-//    @Autowired
+    @Autowired
     public void setBean3(Bean3 bean3) {
         System.out.println(getClass().getSimpleName() + "::setSpringBean3");
         this.bean3 = bean3;

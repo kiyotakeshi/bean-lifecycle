@@ -7,6 +7,9 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 
 import java.util.Arrays;
 
+/**
+ * Override Bean definition phase
+ */
 public class CustomBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
     @Override
