@@ -27,11 +27,6 @@
 			<artifactId>javax.annotation-api</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -39,6 +34,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.kiyotakeshi.beanLifecycle.Runner</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
